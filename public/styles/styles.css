@@ -25,6 +25,10 @@ body {
     color: white;
     font-size: 3rem;
     font-weight: bold; }
+  .header-close {
+    font-size: 2.5rem;
+    display: none;
+    cursor: pointer; }
   .header-toggle {
     font-size: 2rem;
     display: none;
@@ -68,8 +72,8 @@ body {
     position: relative; }
     .header-content-main:after {
       content: "";
-      position: absolute;
       bottom: 0;
+      position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -101,8 +105,8 @@ body {
       cursor: pointer; }
     .header-bottom-item:before {
       content: "";
+      width: 7em;
       height: 5px;
-      width: 7rem;
       background-color: #e98383;
       position: absolute;
       top: 0;
@@ -171,7 +175,7 @@ body {
       background-color: white;
       width: 30rem;
       display: block;
-      padding: 2rem 2.5rem;
+      padding: 5rem 2.5rem;
       z-index: 10;
       -webkit-transform: translateX(100%);
       transform: translateX(100%);
@@ -184,6 +188,19 @@ body {
       transform: translateX(0); }
     .header .header-menu-item {
       margin-bottom: 1rem; }
+    .header .header-close {
+      display: inline-block;
+      color: #e98383;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 1rem; }
+    .header .header-menu-icon {
+      display: block;
+      color: #333333;
+      padding: 15px; }
+      .header .header-menu-icon:hover {
+        color: #e98383; }
     .header .header-menu-link {
       color: #333333;
       width: 100%;
