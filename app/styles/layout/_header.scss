@@ -70,8 +70,7 @@
       content: "";
       bottom: 0;
       @include absoluteCenter("left");
-      width: 6rem;
-      height: 0.5rem;
+      @include size(6rem, 0.5rem);
       background-color: white;
     }
   }

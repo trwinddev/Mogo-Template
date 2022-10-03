@@ -6,3 +6,15 @@ mixin headerBottomItem(number, title)
 	.header-bottom-item.is-active 
 		span.header-bottom-number= number
 		span.header-bottom-text= title
+
+mixin blockBox(caption, title, desc)
+	.block-box
+		h3.block-box-caption= caption 
+		h2.block-box-heading= title
+		if desc 
+			p.block-box-desc= desc
+
+mixin aboutContent(title) 
+	.about-content 
+		i.fa.fa-users.about-icon
+		span.about-title= title
