@@ -1,13 +1,8 @@
 section.about 
   .container  
     +blockBox("What we do", "Story about us", " Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eius non eveniet perspiciatis accusantium suscipit aspernatur fuga fugiat rem, vel fugit, aliquam voluptates. Error corporis placeat, provident dignissimos ab sunt.")
-    .about-list 
-      .about-item 
-        img.about-image(src="../../images/img-about1.png")
-        +aboutContent('Super team')
-      .about-item 
-        img.about-image(src="../../images/img-about2.png")
-        +aboutContent('Super team')
-      .about-item 
-        img.about-image(src="../../images/img-about3.png")
-        +aboutContent('Super team')
+    .about-list
+      +aboutItem("../../images/img-about1.png", 'Super team', 'fa fa-users')
+      +aboutItem("../../images/img-about2.png", 'Super team', 'fa fa-users')
+      +aboutItem("../../images/img-about3.png", 'Super team', 'fa fa-users')
+      

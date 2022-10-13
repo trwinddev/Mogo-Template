@@ -14,7 +14,9 @@ mixin blockBox(caption, title, desc)
 		if desc 
 			p.block-box-desc= desc
 
-mixin aboutContent(title) 
-	.about-content 
-		i.fa.fa-users.about-icon
-		span.about-title= title
+mixin aboutItem(src, title, iconClass, alt = "") 
+	.about-item
+		img.about-image(src= src, alt= alt)
+		.about-content 
+			i.about-icon(class= iconClass)
+			span.about-title= title

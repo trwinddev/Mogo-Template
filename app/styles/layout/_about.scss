@@ -44,11 +44,10 @@
       no-repeat center / cover;
     z-index: 2;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flexbox(center, center, column);
     text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
   }
   &-icon {
     font-size: 2rem;
@@ -57,5 +56,24 @@
   &-title {
     font-weight: bold;
     font-size: 1.8rem;
+    line-height: 1.4;
+    @include textClamp;
+  }
+  @include maxWidth(767px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &-list {
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-template-columns: unset;
+      overflow-x: auto;
+      @include hideScroll;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+    }
+    &-item {
+      scroll-snap-align: start;
+    }
   }
 }

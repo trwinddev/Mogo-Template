@@ -127,7 +127,7 @@
       font-size: 1.8rem;
     }
   }
-  @media screen and (min-width: 768px) {
+  @include maxWidth(768px) {
     &-menu-item:not(:first-child) {
       margin-left: 5rem;
     }
@@ -143,7 +143,7 @@
       color: $secondary-color;
     }
   }
-  @media screen and (max-width: 1023px) {
+  @include maxWidth(1023px) {
     min-height: unset;
     .header-bottom {
       margin-top: 10.5rem;
@@ -156,7 +156,7 @@
       padding-top: 2rem;
     }
   }
-  @media screen and (max-width: 767px) {
+  @include maxWidth(767px) {
     .header-bottom-text {
       display: none;
     }
@@ -232,6 +232,8 @@
     .header-toggle {
       display: inline-block;
       align-self: center;
+      position: sticky;
+      z-index: 100;
     }
   }
 }
