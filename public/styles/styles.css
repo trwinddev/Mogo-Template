@@ -62,7 +62,8 @@ body {
     margin: 0 auto; }
   .header-content-caption {
     font-size: 7.2rem;
-    font-family: "Kaushan Script", cursive; }
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 3rem; }
   .header-content-main {
     font-size: 15rem;
     font-weight: 700;
@@ -102,7 +103,9 @@ body {
       margin-left: 3rem;
       opacity: 0.6;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
     .header-bottom-item:before {
       content: "";
       width: 7em;
@@ -127,7 +130,7 @@ body {
       margin-left: 1rem;
       text-transform: uppercase;
       font-size: 1.8rem; }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .header-menu-item:not(:first-child) {
       margin-left: 5rem; }
     .header-menu-link {
